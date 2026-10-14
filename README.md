@@ -446,6 +446,7 @@ Parameters that are enabled by default have to be explicitly disabled. These (cu
 | `preset=`                          | Comma separated list of one or more presets. Default is `-1,0,1,2,3,4`. Available presets:<br>`0` (No Hud)<br> `1` (FPS Only)<br> `2` (Horizontal)<br> `3` (Extended)<br> `4` (Detailed)<br>User defined presets can be created by using a [presets.conf](data/presets.conf) file in `~/.config/MangoHud/`.                      |
 | `procmem`<br>`procmem_shared`, `procmem_virt`| Displays process' memory usage: resident, shared and/or virtual. `procmem` (resident) also toggles others off if disabled |
 | `proc_vram`                        | Display process' VRAM usage                                                           |
+| `game_mem`                         | Display memory used by the game's cgroup when Steam launches it in its own scope (`STEAM_LAUNCH_WRAPPER_SCOPE`): anon + shmem, which includes GPU buffers on shmem-backed drivers (e.g. msm, i915 iGPU) but not TTM ones (e.g. amdgpu) |
 | `ram`<br>`vram`                    | Display system RAM/VRAM usage                                                         |
 | `ram_temp`                         | Display RAM temperature (only supports DDR5 with `spd5118` driver)                    |
 | `read_cfg`                         | Add to MANGOHUD_CONFIG as first parameter to also load config file. Otherwise only `MANGOHUD_CONFIG` parameters are used |
